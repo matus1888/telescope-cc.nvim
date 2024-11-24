@@ -5,7 +5,7 @@ return function(initial_message, inputs)
     local commit_message = initial_message
 
     if scope ~= nil and scope ~= "" then
-        commit_message = commit_message .. string.format(": %s", scope)
+        commit_message = commit_message .. string.format(": [%s]", scope)
     end
 
     commit_message = string.format("%s %s", commit_message, msg)
