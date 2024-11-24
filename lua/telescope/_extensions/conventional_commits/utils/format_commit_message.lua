@@ -8,7 +8,7 @@ return function(initial_message, inputs)
         commit_message = commit_message .. string.format(": %s", scope)
     end
 
-    commit_message = string.format("%s: %s", commit_message, msg)
+    commit_message = string.format("%s %s", commit_message, msg)
 
     return commit_message
 end
